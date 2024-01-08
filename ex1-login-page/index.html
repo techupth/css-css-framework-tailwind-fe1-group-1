@@ -1,16 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Framework (Tailwind) Exercise 1</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CSS Framework (Tailwind) Exercise 1</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-
-<body>
-  <!-- Start coding here -->
-</body>
-
+  <body>
+    <!-- Start coding here -->
+    <main class="h-screen bg-slate-200 flex justify-center items-center">
+      <form
+        action="#"
+        class="bg-white rounded-xl p-5 flex flex-col justify-center items-center gap-4"
+      >
+        <p class="text-zinc-600 text-xl text-start w-full">Login to Webpage</p>
+        <div class="w-full flex justify-between items-center">
+          <label for="email" class="font-semibold">Email</label>
+          <input
+            type="text"
+            id="email"
+            class="border border-zinc-600 rounded-xl p-2 hover:border-violet-300 focus:outline-none focus:border-violet-500"
+          />
+        </div>
+        <div class="w-full flex  justify-between items-center"> 
+          <label for="password" class="font-semibold">Password</label>
+          <input
+            type="password"
+            id="password"
+            class="border border-zinc-600 rounded-xl p-2 hover:border-violet-300 focus:outline-none focus:border-violet-500"
+          />
+        </div>
+        <div class="flex justify-around w-full gap-x-2 items-center">
+          <button class="w-36 p-2 rounded-full bg-violet-500 text-white active:bg-violet-600 hover:bg-violet-400 focus:outline-none focus:ring-2 focus:ring-violet-300">Sign in</button>
+          <button class="w-36 p-2 rounded-full bg-white text-violet-500 hover:bg-violet-100 focus:outline-none focus:ring-2 focus:ring-violet-300 focus:bg-violet-100">Sign Up</button>
+        </div>
+      </form>
+    </main>
+  </body>
 </html>
